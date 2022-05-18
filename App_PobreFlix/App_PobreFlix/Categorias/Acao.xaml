@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_PobreFlix.Categorias.Page1"
+             Title="APP POBREFLIX - ACAO"
+             BackgroundColor="#2f2f30">
+
+    <StackLayout Orientation="Vertical">
+
+        <Image x:Name="Logo" Style="{ StaticResource LogoNaListaDePosters } "/>
+        <Label Text="ACAO" Style="{ StaticResource LabelTextoVermelho }" />
+
+        <ScrollView>
+            <Grid Padding="5">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Widht="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="300"/>
+                </Grid.RowDefinitions>
+
+                <ImageButton Grid.Row="0" Grid.Column="0"
+                             x:Name="btnO_Protetor"
+                             Style="{ StaticResource ButtonPosters }"
+                             Clicked="Btn_Open_O_Protetor" />
+                
+                <ImageButton Grid.Row="0" Grid.Column="1"
+                             x:Name="btnRocky_4"
+                             Style="{ StaticResource ButtonPosters }"
+                             Clicked="Btn_Open_Rocky_4" />
+
+                <ImageButton Grid.Row="1" Grid.Column="0"
+                             x:Name="btnUm_Tira_da_Pesada"
+                             Style="{ StaticResource ButtonPosters }"
+                             Clicked="Btn_Open_Um_Tira_da_Pesada" />
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

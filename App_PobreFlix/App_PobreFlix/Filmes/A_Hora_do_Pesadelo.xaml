@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_PobreFlix.Filmes.Page1">
+    <ContentPage.Content>
+        <Application.Resources>
+
+            <Style x:Key="Título" TargetType="Label">
+                <Setter Property="TextColor" Value="#e80000"/>
+                <Setter Property="FontSize" Value="40"/>
+            </Style>
+
+            <Style x:Key="ButtonVermelhoMenu" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#e80000"/>
+                <Setter Property="TextColor" Value=Black"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="BorderRadius" Value="10"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
+            </Style>
+            
+        </Application.Resources>
+    </ContentPage.Content>
+</ContentPage>

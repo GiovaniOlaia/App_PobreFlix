@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PobreFlixApp;"
+             x:Class="App_PobreFlix.MainPage"
+             Title="APP POBREFLIX"
+             BackgroundColor="#2f2f30">
+
+    <StackLayout>
+        <Image x:Name="logo" HeightRequest="150" />
+        <ScollView>
+            <Grid RowSpacing="20" ColumnSpacing="10" Padding="10">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Widht="*"/>
+                    <ColumnDefinition Widht="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0"
+                            Text="Acao"
+                            Style="{ StaticResource ButtonVermelhoMenu }"
+                            Clicked="Btn_Open_Acao" />
+
+                <Button Grid.Row="0" Grid.Column="1"
+                            Text="Aventura"
+                            Style="{ StaticResource ButtonVermelhoMenu }"
+                            Clicked="Btn_Open_Aventura" />
+
+                <Button Grid.Row="1" Grid.Column="0"
+                            Text="Adulto"
+                            Style="{ StaticResource ButtonVermelhoMenu }"
+                            Clicked="Btn_Open_Adulto" />
+
+                <Button Grid.Row="1" Grid.Column="1"
+                            Text="Animacao"
+                            Style="{ StaticResource ButtonVermelhoMenu }"
+                            Clicked="Btn_Open_Animacao" />
+
+                <Button Grid.Row="2" Grid.Column="0"
+                            Text="Comedia"
+                            Style="{ StaticResource ButtonVermelhoMenu }"
+                            Clicked="Btn_Open_Comedia" />
+
+                <Button Grid.Row="0" Grid.Column="0"
+                            Text="Luta"
+                            Style="{ StaticResource ButtonVermelhoMenu }"
+                            Clicked="Btn_Open_Luta" />
+
+                <Button Grid.Row="0" Grid.Column="0"
+                            Text="Terror"
+                            Style="{ StaticResource ButtonVermelhoMenu }"
+                            Clicked="Btn_Open_Terror" />
+            </Grid>
+        </ScollView>
+    </StackLayout>
+</ContentPage>
